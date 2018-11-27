@@ -12,6 +12,30 @@
                                                          \/_/    \/_/
 ```
 
+A completely overkill trivia app using:
+
+- [Typescript](http://typescriptlang.org/) alongside BabelJS
+- [redux-saga](https://redux-saga.js.org/)
+- [react-emotion](https://emotion.sh/)
+- [jest](https://jestjs.io/)
+- [Storybook](https://storybook.js.org/)
+- Custom webpack config (but inspired by create-react-app)
+
+
+
+
+# Todo
+
+- [Moar tests](https://cdn.frankerfacez.com/emoticon/236895/4)
+- Should probably move types to their own files/to the root types file
+- Reorganize imports
+- Rename generic types to best practice
+- Write a generic reducer for allIds?
+- Fetch requests should have { type: string, status: { id: string } } instead { type: string, id: string }
+- Add the current quiz to local storage
+- Better use of theming
+
+
 # Setup
 
 1. Clone the repository
@@ -42,7 +66,7 @@ View linting errors by running:
 npm run lint
 ```
 
-# Flow
+# Typescript
 
 View flow errors by running:
 

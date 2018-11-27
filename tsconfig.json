@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "jsx": "react",
+    "sourceMap": true,
+    "allowJs": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "noUnusedParameters": true,
+    "target": "es2015",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "~types": ["types"],
+      "~/*": [ "src/*" ],
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
