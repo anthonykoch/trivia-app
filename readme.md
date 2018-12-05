@@ -68,9 +68,9 @@ npm run lint
 
 # Typescript
 
-View flow errors by running:
+View tsc errors by running:
 
 ```
-npm run flow
+npm run tsc
 ```
 
