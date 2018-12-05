@@ -10,6 +10,6 @@ ghpages.publish('build', {
   if (err) {
     console.log(err)
   } else {
-    console.log('Deployed site to ${branch}!')
+    console.log(`Deployed site to ${branch}!`)
   }
 })
