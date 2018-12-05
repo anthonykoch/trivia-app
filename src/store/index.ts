@@ -19,7 +19,9 @@ export type IAppState = ReturnType<ReturnType<typeof createRootReducer>> & {
 
 const sagaMiddleware = createSagaMiddleware()
 
-export const history = createBrowserHistory()
+export const history = createBrowserHistory({
+  basename: process.env.BASENAME,
+})
 
 export const store = createStore(
   createRootReducer(history),

@@ -23,7 +23,7 @@ module.exports = {
   },
   output: {
     path: paths.outputDest,
-    publicPath: '/',
+    publicPath: process.env.BASENAME || '/',
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -33,11 +33,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.tsx?$/,
-      //   use: 'awesome-typescript-loader?errorsAsWarnings',
-      //   exclude: /node_modules/
-      // },
       {
         test: /\.tsx?$/,
         use: 'babel-loader',
@@ -56,6 +51,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'BASENAME': JSON.stringify(process.env.BASENAME) || '"/"',
+      },
     }),
     new ModuleNotFoundPlugin(paths.appPath),
     new webpack.HotModuleReplacementPlugin(),

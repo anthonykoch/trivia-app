@@ -8,7 +8,6 @@ const base = require('./webpack.config.base')
 
 module.exports = merge(base, {
   output: {
-    publicPath: '/',
     filename: 'static/scripts/[name].[hash:8].js',
     chunkFilename: 'static/scripts/[name].[chunkhash:8].chunk.js',
   },

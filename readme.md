@@ -1,5 +1,7 @@
 # Trivia App
 
+[Live Preview](https://anthonykoch.com/trivia-app)
+
 ```
  ______                                     ______
 /\__  _\       __           __             /\  _  \
@@ -12,6 +14,9 @@
                                                          \/_/    \/_/
 ```
 
+
+# What is it
+
 A completely overkill trivia app using:
 
 - [Typescript](http://typescriptlang.org/) alongside BabelJS
@@ -20,7 +25,6 @@ A completely overkill trivia app using:
 - [jest](https://jestjs.io/)
 - [Storybook](https://storybook.js.org/)
 - Custom webpack config (but inspired by create-react-app)
-
 
 
 
